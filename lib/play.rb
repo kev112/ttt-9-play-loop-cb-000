@@ -36,9 +36,10 @@ def turn(board)
 end
 
 # Define your play method below
-def play
-  loop do
+def play(board)
     i = 0
+  while i < 9 do
+    
     if i.even?
       player = 'X'
     else
@@ -46,5 +47,8 @@ def play
     end
     turn(board)
     i += 1
+    if 
+
+    end
   end
 end
