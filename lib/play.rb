@@ -44,6 +44,7 @@ def play
     else
       player = 'O'
     end
+    turn(board)
     i += 1
   end
 
