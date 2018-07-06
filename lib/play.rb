@@ -36,3 +36,13 @@ def turn(board)
 end
 
 # Define your play method below
+def play
+  i = 0
+  if i.even?
+    player = 'X'
+  else
+    player = 'O'
+  end
+  i += 1
+  
+end
