@@ -28,7 +28,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index)
+    move(board, index, player)
     display_board(board)
   else
     turn(board)
@@ -37,12 +37,15 @@ end
 
 # Define your play method below
 def play
-  i = 0
-  if i.even?
-    player = 'X'
-  else
-    player = 'O'
+  loop do
+    i = 0
+    if i.even?
+      player = 'X'
+    else
+      player = 'O'
+    end
+    i += 1
   end
-  i += 1
-  
+
+
 end
