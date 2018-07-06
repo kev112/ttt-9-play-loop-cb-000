@@ -39,11 +39,7 @@ end
 def play(board)
   i = 0
   while i < 9 do
-    if i.even?
-      player = 'X'
-    else
-      player = 'O'
-    end
+
     turn(board, player)
     i += 1
   end
